@@ -1,0 +1,16 @@
+Using the Singleton design pattern is a simple way to limit the number of class instances to one,
+ helps keep database connections organized, and can also save memory
+ The java code below is a basic example on how to use the Singleton pattern to create a database class(DBConnection)
+ This class can be used to manage a database connection throughout java program  execution
+
+ In the Singleton design pattern, the class itself actually creates the instance, and returns a reference.
+
+  we make the contructor private. This means that the class can only be instantiated from within DBConnection itself.
+
+in over example We are going to create an  database (EPAss) that contains an (epassdata) table. 
+We will also create a java application that will connect with the EPAss database. 
+The connection will be established by a singleton class (DBConnection)  which will contain all the necessary driver information.
+From the java application, we will taking the user information and storing it in database 
+
+now in mainclass we are invoking the DBConnection witch will return connection object of JDBC for performing oprations on databade
+
